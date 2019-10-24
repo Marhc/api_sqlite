@@ -1,0 +1,13 @@
+// List Route
+GET http://localhost:3535/users
+
+###
+
+// Create Route
+POST http://localhost:3535/user HTTP/1.1
+Content-Type: application/json
+
+{
+  "name": "Leonardo Coutinho",
+  "email": "leonardo@gmail.com"
+}

@@ -1,0 +1,33 @@
+{
+  "name": "api_sqlite",
+  "version": "1.0.0",
+  "description": "Projeto de exemplo de uma Api usando Node, Express, Sequelize e SQLite.",
+  "main": "./src/server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node ./src/server.js",
+    "dev": "nodemon ./src/server.js",
+    "create:users": "sequelize migration:create --name=create-users",
+    "migrate": "sequelize db:migrate"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Marhc/api_sqlite.git"
+  },
+  "keywords": [],
+  "author": "Marcio Coutinho",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Marhc/api_sqlite/issues"
+  },
+  "homepage": "https://github.com/Marhc/api_sqlite#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "sequelize": "^5.21.1",
+    "sqlite3": "^4.1.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.4",
+    "sequelize-cli": "^5.5.1"
+  }
+}
