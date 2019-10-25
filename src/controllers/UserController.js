@@ -1,7 +1,5 @@
 const User = require("../models/User");
 
-const message = { success: "Operation successful." };
-
 module.exports = {
   async store(req, res) {
     const { name, email } = req.body;
@@ -40,7 +38,7 @@ module.exports = {
       }
     });
     if (deleted) {
-      reply = { message: message.success };
+      reply = { message: "Operation successful." };
       res.status(200);
     }
     return res.json(reply);
