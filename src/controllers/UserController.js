@@ -1,7 +1,6 @@
 const User = require("../models/User");
 
-const opError = { msg: "Operation not successful." };
-const opSuccess = { msg: "Operation successful." };
+const message = { success: "Operation successful." };
 
 module.exports = {
   async store(req, res) {
@@ -10,17 +9,21 @@ module.exports = {
     return res.json(newUser);
   },
   async show(req, res) {
+    res.status(400);
     const { id } = req.params;
-    const wantedUser = await User.findByPk(id);
-    return res.json(wantedUser);
+    const userFound = await User.findByPk(id);
+    if (userFound) {
+      res.status(200);
+    }
+    return res.json(userFound);
   },
   async update(req, res) {
-    let reply = opError;
+    let reply = null;
     res.status(400);
     const { id } = req.params;
     const { name, email } = req.body;
     const changed = await User.update({ name, email }, { where: { id: id } });
-    if (changed) {
+    if (changed[0]) {
       const updatedUser = await User.findByPk(id);
       reply = updatedUser;
       res.status(200);
@@ -28,7 +31,7 @@ module.exports = {
     return res.json(reply);
   },
   async destroy(req, res) {
-    let reply = opError;
+    let reply = null;
     res.status(400);
     const { id } = req.params;
     const deleted = await User.destroy({
@@ -37,7 +40,7 @@ module.exports = {
       }
     });
     if (deleted) {
-      reply = opSuccess;
+      reply = { message: message.success };
       res.status(200);
     }
     return res.json(reply);
