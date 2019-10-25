@@ -16,8 +16,8 @@ module.exports = {
     return res.json(userFound);
   },
   async update(req, res) {
-    let reply = null;
     res.status(400);
+    let reply = null;
     const { id } = req.params;
     const { name, email } = req.body;
     const changed = await User.update({ name, email }, { where: { id: id } });
@@ -29,8 +29,8 @@ module.exports = {
     return res.json(reply);
   },
   async destroy(req, res) {
-    let reply = null;
     res.status(400);
+    let reply = null;
     const { id } = req.params;
     const deleted = await User.destroy({
       where: {
