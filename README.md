@@ -1,13 +1,24 @@
 api_sqlite
 ==========
 
-Projeto de exemplo de uma Api usando Node, Express, Sequelize e SQLite.
+Exemplo de uma API Rest criada com Node, Express, Sequelize e SQLite.
 
-### Requisitos de projeto ###
+Pré-Requisitos
+==============
 
-  Você precisa ter estes recursos previamente instalados:
+Você vai precisar ter instalado em seu sistema:
 
-   * Node.js
-   * NPM / Yarn
-   * Git
-   * VSCode (somente no ambiente de desenvolvimento)
+  * Git
+  * Node.js
+  * NPM / Yarn
+  * Visual Studio Code (VSCode), mas somente no ambiente de desenvolvimento.
+
+Extensões do VSCode
+===================
+
+Você também vai precisar destas extensões:
+
+  * Markdown Preview Enhanced
+  * .gitignore Generator
+  * REST Client
+  * SQLTools
