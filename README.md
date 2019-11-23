@@ -90,7 +90,7 @@ Desde que:
 
 - **Atribua a fonte**: você deve atribuir qualquer uso público do projeto ou trabalhos produzidos a partir do projeto, usando um link semelhante a esse:
 
-  "Construído com Restpy: https://github.com/Marhc/api_sqlite".
+  "api_sqlite: https://github.com/Marhc/api_sqlite".
 
 Para qualquer uso ou redistribuição do projeto, ou trabalhos produzidos a partir dele, você deve deixar claro qual foi a licença utilizada e manter intactos os avisos originais.
 
