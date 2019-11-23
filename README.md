@@ -1,7 +1,7 @@
 api_sqlite
 ==========
 
-Exemplo de uma API Rest criada com [Node](https://nodejs.org/en/about), [Express](https://github.com/expressjs/express), [Sequelize](https://github.com/sequelize/sequelize) e [SQLite](https://www.sqlite.org).
+Exemplo de uma API Rest escrita em Javascript com [Node](https://nodejs.org/en/about), [Express](https://github.com/expressjs/express), [Sequelize](https://github.com/sequelize/sequelize) e [SQLite](https://www.sqlite.org).
 
 ## Pré-Requisitos
 
