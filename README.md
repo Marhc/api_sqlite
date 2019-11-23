@@ -8,10 +8,10 @@ Pré-Requisitos
 
 Você vai precisar ter instalado em seu sistema:
 
-  * Git
-  * Node.js
-  * NPM / Yarn
-  * Visual Studio Code (VSCode), mas somente no ambiente de desenvolvimento.
+  * [Git](https://git-scm.com/downloads)
+  * [Node.js](https://tecadmin.net/install-nodejs-with-nvm)
+  * [NPM](https://www.npmjs.com/get-npm) ou [Yarn](https://yarnpkg.com/pt-BR/docs/install)
+  * [Visual Studio Code](https://code.visualstudio.com/download) (**VSCode**), mas somente no ambiente de desenvolvimento.
 
 No ambiente de desenvolvimento, também recomendamos instalar no **VSCode** a extensão [REST Client](https://marketplace.visualstudio.com/items?itemName=humao.rest-client).
 
@@ -40,7 +40,7 @@ A partir daí o procedimento varia conforme o ambiente de instalação.
 Instale somente as dependências de produção:
 
 ```
-npm install
+npm install --only=prod
 ```
 
 E inicie a aplicação digitando:
@@ -54,7 +54,7 @@ npm run start
 Instale todos os componentes, tanto de produção como de desenvolvimento:
 
 ```
-pipenv install --dev
+npm install
 ```
 
 Depois, inicie a Api em modo de desenvolvimento com o comando:
